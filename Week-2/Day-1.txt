@@ -1,0 +1,101 @@
+1.CharAt(): This method takes an index as a parameter and gives a character of that particular index of a sentence. 
+Code Example:
+const sentence = 'Hello JavaScript';
+const index = 6;
+console.log(`At ${index} position letter is ${sentence.charAt(index)}`);
+// expected output:"At 3 position letter is J"
+
+2. Concat(): This method merges strings together and provides output a new string.
+Code Example: 
+const firstString = 'Hello';
+const secondString = 'JavaScript';
+console.log(firstString.concat(' ', secondString)); // it will not give you extra space when merging strings. That's why i added a space
+// expected output: "Hello JavaScript"
+
+3. indexOf(): This method helps you to search a string's first index within a paragraph. It takes a string as a parameter and returns an index. 
+If any string is not found then, it will return -1.
+Code Example:
+const paragraph = 'Hello, I am a new beginner in JavaScript. I really love JavaScript';
+const searchTerm = 'am';
+const indexOfFirst = paragraph.indexOf(searchTerm);
+console.log(`The first index of "${searchTerm}" is ${indexOfFirst}`);
+// expected output: "The first index of "am" is 9"
+
+
+4.replace(): This method helps you to replace another character/string instead of a character/string. 
+It takes 2 characters/string as parameters such as,  
+1st parameter: which word you want to change,
+2nd parameter: which word you want to use.
+
+Code Example:
+const paragraph = 'I hate JavaScript.';
+console.log(paragraph.replace('hate', 'love'));
+// expected output: "I love JavaScript."
+
+5. parseFloat(): This method helps you to convert a variable into a floating-point number. 
+If it could not convert into floating-point number, i will return NaN(Not a Number).
+Code Example: 
+const input = "11.4694akhdnada";
+const output = parseFloat(input);
+console.log(`${input} is converted into ${output}`)
+// expected output: "11.4694akhdnada is converted into 11.4694"
+
+
+6. parseInt(): This method helps you to convert a variable into an integer number. 
+If it could not convert into integer number, i will return NaN(Not a Number).
+
+Code Example:
+const input = "5846.485";
+const output = parseInt(input);
+console.log(`${input} is converted into ${output}`)
+// expected output: "5846.485 is converted into 5846"
+
+
+7. Math.abs(): This method returns an absolute value of a number.
+Let "y" is a number. If "y" is postive or zero, it will return "y". If "y" is negative, it will return "y".
+
+Code Example:
+const y = -45.09;
+console.log(Math.abs(y));
+//expected output: 45.09
+
+const z = 25;
+console.log(Math.abs(z));
+//expected output: 25
+
+
+8. Math.min(): This method helps you to find the smallest value among some numbers.
+
+Code Example: 
+const x = [4,8,9,3,5];
+const minNumber = Math.min(...x); //here, copying of that array in min function's argument
+console.log(`Smallest number is ${minNumber}`);
+// expected output: (`Smallest number is 3"
+
+
+9. Math.max(): This method helps you to find the largest value among some numbers.
+
+Code Example: 
+const x = [4,8,9,3,5];
+const maxNumber = Math.max(...x); //here, copying of that array in min function's argument
+console.log(`Largest number is ${maxNumber}`);
+// expected output: "Largest number is 9"
+
+
+10. find(): find() is one of the arrays methods. This method is used to find an element from an array. 
+It returns the first matched element in a array. 
+
+Code Example:
+ const array = [75,85,25,43,69,89];
+const findTerm = 25;
+const result = array.find(element => element == findTerm);
+let x;
+if(result == findTerm){
+	x = "found";
+}
+else{
+  x = "not found";
+}
+
+console.log(`${findTerm} is ${x}`);
+// expected output: "25 is found"
